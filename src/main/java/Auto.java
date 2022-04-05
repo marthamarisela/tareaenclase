@@ -39,6 +39,10 @@ public class Auto {
           }
       }
       return retorno;
-      
+  }
+  public double calcularMatricula(){
+      var retorno=1000000d;
+      if(this.precio>0&& this.precio<=1000){
+      return retorno;
   }
 }
