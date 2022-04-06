@@ -18,7 +18,7 @@ public class Principal {
          autoJuan.precio=23145d;
         
          
-         System.out.println(autoJuan.color+"-----------------"+
+         System.out.println(autoJuan.color+"-------------"+
                  autoJuan.marca+"---------"+
                  autoJuan.year+"--------"+
                  autoJuan.placa+"---------");
@@ -33,17 +33,34 @@ public class Principal {
                  autoMauricio.marca+"---------"+
                  autoMauricio.year+"--------"+
                  autoMauricio.placa+"---------");
+        
          var esTaxi=false;
          esTaxi=autoJuan.esTaxi();
          if(esTaxi==true){
-         System.out.println("el auto de placa:"+autoJuan.placa+"es un taxi");
+         System.out.println("el auto de placa: "+autoJuan.placa+" es un taxi");
+         }else{
+             System.out.println("el auto de placa: "+autoJuan.placa+" No es un taxi");
+         }
+         
+         esTaxi=autoMauricio.esTaxi();
+         if(esTaxi==true){
+         System.out.println("el auto de placa: "+autoMauricio.placa+" es un taxi");
+         }else{
+             System.out.println("el auto de placa: "+autoMauricio.placa+" No es un taxi");
          }
          
          System.out.println("el auto de precio"+
                  autoJuan.precio+
                  "debe pagar de tasa solidaria"
-                 +autoJuan.calcularTasaSolidaria());
+                 +autoJuan.calcularTasaSolidaria()); 
+         
+         System.out.println("el auto de precio"+
+                 autoMauricio.precio+
+                 "debe pagar de tasa solidaria"
+                 +autoMauricio.calcularTasaSolidaria());
+         System.out.println("el valor de matricula es "+autoMauricio.calcularMatricula());
+         System.out.println("el valor de matricula es "+autoJuan.calcularMatricula());
     }
-  
+        
     
 }
