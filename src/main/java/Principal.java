@@ -14,7 +14,7 @@ public class Principal {
          autoJuan.color="amarillo";
          autoJuan.marca="jetour";
          autoJuan.year=2022;
-         autoJuan.placa="zdfd4";
+         autoJuan.placa="ABB 0102";
          autoJuan.precio=23145d;
         
          
@@ -58,8 +58,15 @@ public class Principal {
                  autoMauricio.precio+
                  "debe pagar de tasa solidaria"
                  +autoMauricio.calcularTasaSolidaria());
-         System.out.println("el valor de matricula es "+autoMauricio.calcularMatricula());
-         System.out.println("el valor de matricula es "+autoJuan.calcularMatricula());
+        var costoMatricula=10000d;
+        costoMatricula=autoJuan.calcularMatricula(2010, 10000);
+        System.out.println("Debe pagar "+costoMatricula+" USD por concepto de matrícula");
+        
+       
+        System.out.println("el auto es de la provincia de "+autoJuan.obtenerProvincia());
+        System.out.println("el auto es de la provincia de "+autoMauricio.obtenerProvincia());
+
+       
     }
         
     
