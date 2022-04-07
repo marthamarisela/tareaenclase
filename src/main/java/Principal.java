@@ -13,7 +13,7 @@ public class Principal {
          var autoJuan=new Auto();
          autoJuan.color="amarillo";
          autoJuan.marca="jetour";
-         autoJuan.year=2022;
+         autoJuan.year=2010;
          autoJuan.placa="ABB 0102";
          autoJuan.precio=23145d;
         
@@ -25,7 +25,7 @@ public class Principal {
          var autoMauricio=new Auto();
          autoMauricio.color="rojo";
          autoMauricio.marca="hino";
-         autoMauricio.year=2022;
+         autoMauricio.year=2015;
          autoMauricio.placa="zdfd4";
          autoMauricio.precio=566666d;
          
@@ -65,6 +65,10 @@ public class Principal {
        
         System.out.println("el auto es de la provincia de "+autoJuan.obtenerProvincia());
         System.out.println("el auto es de la provincia de "+autoMauricio.obtenerProvincia());
+        System.out.println("el año actual del vehiculo es :"+autoJuan.calcularYears(2022));
+         System.out.println("el año actual del vehiculo es :"+autoMauricio.calcularYears(2022));
+        System.out.println(" el auto se puede asegurar:"+autoJuan.sePuedeAsegurar(2022, 6));
+        System.out.println(" el auto se puede asegurar:"+autoMauricio.sePuedeAsegurar(2022, 7));
 
        
     }
