@@ -104,6 +104,19 @@ public class Auto {
           return retorno;
       }
   
+  public boolean esProvinciaDe(String provincia ){
+      var retorno=false;
+      var primeraLetraProvincia=provincia.substring(0,1);
+      var primeraLetraPlaca=this.placa.substring(0,1);
+      if(provincia=="Azuay"&& primeraLetraPlaca=="A"){
+      retorno=true;
+      return retorno;
+      }
+      if(provincia=="Cañar"&& primeraLetraPlaca=="c"){
+      retorno=true;
+      return retorno;
+      }
+    }
   
 }
 
